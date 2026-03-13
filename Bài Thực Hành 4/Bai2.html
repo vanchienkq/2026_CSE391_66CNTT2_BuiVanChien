@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2 - Validation Form</title>
+</head>
+
+<body>
+
+<h2>Form đăng ký</h2>
+
+<form id="registerForm">
+
+	<div>
+		Họ tên<br>
+		<input id="fullname">
+		<span id="nameErr"></span>
+	</div>
+
+	<div>
+		Email<br>
+		<input id="email">
+		<span id="emailErr"></span>
+	</div>
+
+	<div>
+		Số điện thoại<br>
+		<input id="phone">
+		<span id="phoneErr"></span>
+	</div>
+
+	<div>
+		Mật khẩu<br>
+		<input id="password" type="password">
+		<span id="passErr"></span>
+	</div>
+
+	<div>
+		Xác nhận mật khẩu<br>
+		<input id="confirm" type="password">
+		<span id="confirmErr"></span>
+	</div>
+
+	<button type="submit">Đăng ký</button>
+
+</form>
+
+<hr>
+
+<h2>Form đặt hàng</h2>
+
+<form id="orderForm">
+
+	Sản phẩm<br>
+	<select id="product">
+		<option value="">-- Chọn sản phẩm --</option>
+		<option value="Ao">Áo</option>
+		<option value="Quan">Quần</option>
+	</select>
+
+	<br><br>
+
+	Số lượng<br>
+	<input id="quantity" type="number">
+
+	<br><br>
+
+	Ngày giao<br>
+	<input id="date" type="date">
+
+	<br><br>
+
+	Địa chỉ<br>
+	<input id="address">
+
+	<br><br>
+
+	Ghi chú<br>
+	<textarea id="note"></textarea>
+	<div id="noteCount">0/200</div>
+
+	<br>
+
+	Phương thức thanh toán<br>
+	<input type="radio" name="pay" value="COD">COD
+	<input type="radio" name="pay" value="Bank">Chuyển khoản
+
+	<br><br>
+
+	Tổng tiền: <span id="total">0</span>
+
+	<br><br>
+
+	<button type="submit">Đặt hàng</button>
+
+</form>
+
+<script src="bai2.js"></script>
+
+</body>
+</html>

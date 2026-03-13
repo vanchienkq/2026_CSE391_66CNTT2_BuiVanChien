@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1 - Quản lý sinh viên</title>
+</head>
+
+<body>
+
+	<h2>Quản lý điểm sinh viên</h2>
+
+	<h3>Thêm sinh viên</h3>
+
+	<input id="name" placeholder="Họ tên">
+	<input id="score" type="number" placeholder="Điểm (0-10)">
+	<button id="addBtn">Thêm</button>
+
+	<hr>
+
+	<h3>Tìm kiếm và lọc</h3>
+
+	<input id="search" placeholder="Tìm theo tên">
+
+	<select id="filter">
+		<option value="all">Tất cả</option>
+		<option value="Giỏi">Giỏi</option>
+		<option value="Khá">Khá</option>
+		<option value="Trung bình">Trung bình</option>
+		<option value="Yếu">Yếu</option>
+	</select>
+
+	<hr>
+
+	<table border="1" cellpadding="8">
+
+		<thead>
+			<tr>
+				<th>STT</th>
+				<th>Họ tên</th>
+				<th id="sortScore">Điểm ▲▼</th>
+				<th>Xếp loại</th>
+				<th>Thao tác</th>
+			</tr>
+		</thead>
+
+		<tbody id="tableBody"></tbody>
+
+	</table>
+
+	<p id="stats"></p>
+
+	<script src="bai1.js"></script>
+
+</body>
+</html>
